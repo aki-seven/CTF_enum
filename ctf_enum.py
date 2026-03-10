@@ -28,7 +28,7 @@ def nmap_scan():
     print("[+] Running initial port scan")
     subprocess.run(f"nmap -p- --min-rate 1000  -v -oN {options.ip}/nmap_portscan.txt {options.ip}", shell=True)
 
-    ports = [] #GPT 
+    ports = [] 
 
     with open(f"{options.ip}/nmap_portscan.txt") as f:
         for line in f:
@@ -41,7 +41,7 @@ def nmap_scan():
 
     if not ports:
         print("[-] No open ports found.")
-        exit() # GPT END
+        exit() 
 
     # SERVICE SCAN
     service_scan = f"nmap -Pn -A -T4 -p{ports} -v -oN {options.ip}/nmap_service_scan.txt {options.ip}"
@@ -124,4 +124,5 @@ while True:
         additional_tools()
     else:
        print("Exiting...")
+
        break
