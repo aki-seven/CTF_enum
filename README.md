@@ -49,6 +49,8 @@ Select an option in the menu.
 
 The script automatically organizes results into a folder named after the target IP:
 
+```bash
+
 TARGET_IP/
  ├── nmap_portscan.txt
  ├── nmap_service_scan.txt
@@ -59,5 +61,7 @@ TARGET_IP/
  ├── gobuster_common.txt
  ├── ffuf_raft_medium.json
  └── ffuf_extension_raft_medium.json
+
+```
 
  
