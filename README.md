@@ -24,13 +24,14 @@ ffuf
 nikto
 
 ###  INSTALLATION ###
+```bash
 git clone https://github.com/aki-seven/CTF_enum.git
-
-### RUN ###
-python3 ctf_enum.py --ip <TARGET IP>
+```
 
 ### USAGE ###
+```bash
 python3 ctf_enum.py --ip <TARGET IP>
+```
 
 --- Start Options ---
 1) Run port scanning
